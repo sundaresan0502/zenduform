@@ -12,10 +12,12 @@ import {NavigationBarComponent} from './components/navigation-bar/navigation-bar
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SubmissionsComponent } from './components/submissions/submissions.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    SubmissionsComponent
   ],
   imports: [
     BrowserModule,
