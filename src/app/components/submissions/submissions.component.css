@@ -1,0 +1,96 @@
+.submissions-content-form {
+    display: flex;
+    align-items: baseline;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+.submissions-label-header {
+    position: absolute;
+    width: 186px;
+    height: 45px;
+    left: 40px;
+    top: 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 140%;
+    color: #060C1B;
+    display: flex;
+    align-items: center;
+}
+.submissions-content-search {
+    justify-content: center;
+    margin-top: 130px;
+    margin-left: 40px;
+    width: 334px;
+    height: 48px;
+    background: #FFFFFF;
+}
+.submission-content-spacer {
+    padding: 15px;
+}
+.submissions-content-select-form {
+    width: 209px;
+    height: 48px;
+}
+.submissions-content-select-status {
+    width: 209px;
+    height: 48px;
+}
+.submissions-content-datepicker {
+    width: 209px;
+    height: 48px;
+}
+.submissions-content-toggle-group {
+    background: #FFFFFF;
+    color: #060C1B;
+}
+.submissions-content-toggle-map {
+    width: 100px;
+    height: 48px;
+    border: 2px solid #B8B9BC;
+}
+.submissions-content-toggle-list {
+    width: 100px;
+    height: 48px;
+    border: 2px solid #B8B9BC;
+}
+.mat-button-toggle-checked {
+    color: #FFFFFF;
+    background-color: #2188D9;
+    border-color: #2188D9;
+}
+.submissions-content-export {
+    justify-content: center;
+    align-items: baseline;
+}
+.submissions-content-export-button {
+    color: #2188D9;
+    margin-left: -5px;
+
+}
+.submissions-content-export-icon {
+    color: #2188D9;
+    text-decoration-color: #2188D9;
+    margin-bottom: -8px;
+}
+.submissions-content-export-button-label {
+    color: #2188D9;
+}
+.submissions-component-context-map {
+    padding: 10px;
+    background-color: aquamarine;
+    margin-left: 40px;
+    border: 2px solid #B8B9BC;
+    height: 480px;
+    width: 1460px;
+}
+.submissions-component-context-list {
+    padding: 10px;
+    background-color: aquamarine;
+    margin-left: 40px;
+    border: 2px solid #B8B9BC;
+    height: 480px;
+    width: 1460px;
+}

@@ -1,4 +1,63 @@
 <app-navigation-bar> </app-navigation-bar>
-<br>
-<span></span>
-<h1 style="margin-top: 60px;">submissions works!</h1>
+
+<mat-label class="submissions-label-header">Submissions</mat-label>
+
+<br />
+
+<div class="submissions-content-form">
+    <mat-form-field class="submissions-content-search" appearance="outline">
+        <mat-label>Search</mat-label>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput placeholder="Search...">
+    </mat-form-field>
+    <span class="submission-content-spacer"></span>
+    <mat-form-field class="submissions-content-select-form" appearance="outline">
+        <mat-label>Select Form</mat-label>
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <span class="submission-content-spacer"></span>
+    <mat-form-field class="submissions-content-select-status" appearance="outline">
+        <mat-label>Select Status</mat-label>
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <span class="submission-content-spacer"></span>
+    <mat-form-field class="submissions-content-datepicker" appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <span class="submission-content-spacer"></span>
+    <span class="submission-content-spacer"></span>
+    <span class="submission-content-spacer"></span> 
+    <mat-button-toggle-group class="submissions-content-toggle-group" name="submissions-list">
+        <mat-button-toggle class="submissions-content-toggle-map" value="Map" (click)="enableMapComponent(true)">Map</mat-button-toggle>
+        <mat-button-toggle class="submissions-content-toggle-list" value="List" (click)="enableMapComponent(false)" checked>List</mat-button-toggle>
+    </mat-button-toggle-group>
+    <span class="submission-content-spacer"></span>
+    <div class="submissions-content-export">
+        <mat-icon class="submissions-content-export-icon">sim_card_download</mat-icon>
+        <a mat-button class="submissions-content-export-button" color="#2188D9" routerLink="" appearance="outline">
+            <mat-label class="submissions-content-export-button-label">Export</mat-label>
+        </a>
+    </div>  
+</div>
+<br/>
+<div class="submissions-component-context">
+    <div *ngIf="loadMapComponent; else elseBlock">
+        <mat-card class="submissions-component-context-map">
+            Content to render when condition is true.
+        </mat-card>
+    </div>
+    <ng-template #elseBlock>
+        <mat-card class="submissions-component-context-list">
+            Content to render when condition is false.
+        </mat-card>
+    </ng-template>
+</div>

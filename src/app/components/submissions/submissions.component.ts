@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./submissions.component.css']
 })
 export class SubmissionsComponent {
+  loadMapComponent = false;
 
+  enableMapComponent(value: boolean) {
+    this.loadMapComponent = value;
+  }
 }
