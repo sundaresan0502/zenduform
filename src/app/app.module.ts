@@ -13,11 +13,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SubmissionsComponent } from './components/submissions/submissions.component';
+import { HomeComponent } from './components/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    SubmissionsComponent
+    SubmissionsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
