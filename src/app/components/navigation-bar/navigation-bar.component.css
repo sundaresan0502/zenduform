@@ -11,6 +11,7 @@
     top: 0%;
     bottom: 91.67%;
     background: #2188D9;
+    width: 100%;
 }
 .header-text {
     width: 198px;
@@ -26,11 +27,15 @@
     color: #FFFFFF;
 }
 .navbar-submenu-spacer {
-    flex: 1 1 auto;
+    margin-left: 40px;
+}
+.navbar-mat-button {
+    width: 169px;
+    height: 72px;
 }
 .navbar-submenu-context {
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 500;
     font-style: normal;
     line-height: 14px;
@@ -46,26 +51,44 @@
 }
 .navbar-submenu-icon {
     color: #FFFFFF;
+    width: 19px;
+    height: 18px;
+}
+.navbar-submenu-account {
+    align-items: center;
+    max-width: fit-content;
+    margin-inline-start: -50px;
 }
 .navbar-notification {
-    position: initial;
-    left: 16.67%;
-    right: 16.67%;
-    top: 10.42%;
-    bottom: 8.33%;
+    margin-top: 10px;
     color:#FFFFFF;
 }
 .navbar-notification:hover {
     transform: scale(1.5);
 }
 .navbar-logout {
-    position: initial;
-    left: 8.33%;
-    right: 8.33%;
-    top: 12.5%;
-    bottom: 12.5%;
+    margin-left: 15px;
     color: #FFFFFF;
 }
 .navbar-logout:hover {
     transform: scale(1.5);
+}
+.navbar-smallscreen-submenu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-submenu {
+        display: none;
+    }
+    .navbar-submenu-account {
+        display: none;
+    }
+    .navbar-smallscreen-submenu {
+        display: flex;
+        margin-left: -80px;
+    }
+    .navbar-submenu-spacer {
+        margin-left: -150px;
+    }
 }

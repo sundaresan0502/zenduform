@@ -6,34 +6,72 @@
 
         <div class="navbar-submenu-spacer"> </div>
         
-        <a mat-button class="navbar-mat-button"> 
-            <mat-icon class="navbar-submenu-icon">format_list_bulleted</mat-icon>
-            <div class="navbar-submenu-context"> Forms</div> 
-        </a>
-        <a mat-button class="navbar-mat-button"> 
-            <mat-icon class="navbar-submenu-icon">people</mat-icon>
-            <div class="navbar-submenu-context"> Customers</div> 
-        </a>
-        <a mat-button class="navbar-mat-button" routerLink="submissions">
-            <mat-icon class="navbar-submenu-icon">graphic_eq</mat-icon> 
-            <div class="navbar-submenu-context"> Submissions</div> 
-        </a>
-        <a mat-button class="navbar-mat-button">
-            <mat-icon class="navbar-submenu-icon">history</mat-icon> 
-            <div class="navbar-submenu-context"> History</div> 
-        </a>
-        <a mat-button class="navbar-mat-button">
-            <mat-icon class="navbar-submenu-icon">insert_chart_outlined</mat-icon> 
-            <div class="navbar-submenu-context"> Reports</div> 
-        </a>
-        <a mat-button class="navbar-mat-button">
-            <mat-icon class="navbar-submenu-icon">insert_chart_outlined</mat-icon> 
-            <div class="navbar-submenu-context"> Workflow</div> 
-        </a>   
-        
-        <span></span>
-
+        <div class="navbar-submenu">
+            <a mat-button class="navbar-mat-button"> 
+                <mat-icon class="navbar-submenu-icon">format_list_bulleted</mat-icon>
+                <div class="navbar-submenu-context"> Forms</div> 
+            </a>
+            <a mat-button class="navbar-mat-button"> 
+                <mat-icon class="navbar-submenu-icon">people</mat-icon>
+                <div class="navbar-submenu-context"> Customers</div> 
+            </a>
+            <a mat-button class="navbar-mat-button" routerLink="submissions">
+                <mat-icon class="navbar-submenu-icon">graphic_eq</mat-icon> 
+                <div class="navbar-submenu-context"> Submissions</div> 
+            </a>
+            <a mat-button class="navbar-mat-button">
+                <mat-icon class="navbar-submenu-icon">history</mat-icon> 
+                <div class="navbar-submenu-context"> History</div> 
+            </a>
+            <a mat-button class="navbar-mat-button">
+                <mat-icon class="navbar-submenu-icon">insert_chart_outlined</mat-icon> 
+                <div class="navbar-submenu-context"> Reports</div> 
+            </a>
+            <a mat-button class="navbar-mat-button">
+                <mat-icon class="navbar-submenu-icon">insert_chart_outlined</mat-icon> 
+                <div class="navbar-submenu-context"> Workflow</div> 
+            </a>
+        </div>
+        <div class="navbar-submenu-account">
         <mat-icon class="navbar-notification">notifications</mat-icon>
         <mat-icon class="navbar-logout">logout</mat-icon>
+        </div>
+        <div class="navbar-smallscreen-submenu">
+            <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+            <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon class="navbar-smallscreen-submenu-icon">format_list_bulleted</mat-icon>
+                <div class="navbar-smallscreen-submenu-xsandsscreen-context"> Forms</div> 
+            </button>
+            <button mat-menu-item>
+                <mat-icon class="navbar-smallscreen-submenu-icon">people</mat-icon>
+                <div class="navbar-smallscreen-submenu-xsandsscreen-context"> Customers</div> 
+            </button>
+            <button mat-menu-item routerLink="submissions">
+                <mat-icon class="navbar-smallscreen-submenu-icon">graphic_eq</mat-icon> 
+                <div class="navbar-smallscreen-submenu-xsandsscreen-context"> Submissions</div> 
+            </button>
+            <button mat-menu-item>
+                <mat-icon class="navbar-smallscreen-submenu--icon">history</mat-icon> 
+                <div class="navbar-smallscreen-submenu-context"> History</div> 
+            </button>
+            <button mat-menu-item>
+                <mat-icon class="navbar-smallscreen-submenu-icon">insert_chart_outlined</mat-icon> 
+                <div class="navbar-smallscreen-submenu-context"> Reports</div> 
+            </button>
+            <button mat-menu-item>
+                <mat-icon class="navbar-smallscreen-submenu-icon">insert_chart_outlined</mat-icon> 
+                <div class="navbar-smallscreen-submenu-context"> Workflow</div>
+            </button>
+            <button mat-menu-item>
+                    <mat-icon class="navbar-smallscreen-notification">notifications</mat-icon>
+                    <div class="navbar-smallscreen-submenu-context"> notifications</div>
+            </button>
+            <button mat-menu-item>
+                <mat-icon class="navbar-smallscreen-logout">logout</mat-icon>
+                <div class="navbar-smallscreen-submenu-context"> logout</div>
+            </button>
+</mat-menu>
 
+        </div>
 </mat-toolbar>  

@@ -94,3 +94,25 @@
     height: 480px;
     width: 1460px;
 }
+
+@media only screen and (max-width: 600px) {
+    .submissions-content-form {
+        display: grid;
+    }
+    .submissions-content-select-form {
+        margin-left: 40px;
+    }
+    .submissions-content-select-status {
+        margin-left: 40px;
+    }
+    .submissions-content-datepicker {
+        margin-left: 40px;
+    }
+    .submissions-content-toggle-group {
+        margin-left: 40px;
+        max-width: 180px;
+    }
+    .submissions-content-export {
+        margin-left: 40px;
+    }
+}
