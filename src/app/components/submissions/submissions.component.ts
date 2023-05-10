@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import studentsData from '../../../assets/data/data.json';
-import {StudentDataModel} from '../../model/studentDataModel';
+import submissionData from '../../../assets/data/submissionData.json';
+import {SubmissionDataModel} from '../../model/submissionDataModel';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 @Component({
@@ -11,9 +11,8 @@ import {MatTableDataSource} from '@angular/material/table';
 export class SubmissionsComponent implements OnInit, AfterViewInit {
   loadMapComponent = false;
   
-  displayedColumns: string[] = ['id', 'name', 'email', 'gender'];
-  dataSource = new MatTableDataSource<StudentDataModel>(ELEMENT_DATAs);
-
+  displayedColumns: string[] = ['Select', 'Task', 'Status', 'From', 'To', 'Customer_Address', 'Due_Date'];
+  dataSource = new MatTableDataSource<SubmissionDataModel>(ELEMENT_DATAs);
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
@@ -28,6 +27,6 @@ export class SubmissionsComponent implements OnInit, AfterViewInit {
   } 
   
 }
-const ELEMENT_DATAs: StudentDataModel[] = studentsData
+const ELEMENT_DATAs: SubmissionDataModel[] = submissionData
 
 
