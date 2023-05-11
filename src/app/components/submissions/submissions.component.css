@@ -79,12 +79,9 @@
     color: #2188D9;
 }
 .submissions-component-context-map {
-    padding: 10px;
-    background-color: aquamarine;
     margin-left: 40px;
-    border: 2px solid #B8B9BC;
-    height: 480px;
-    width: 1460px;
+    display: -webkit-inline-box;
+    box-shadow: none;
 }
 .submissions-component-context-list {
     margin-left: 38px;
@@ -196,6 +193,22 @@
     font-size: 13px;
     line-height: 24px; 
     color: #FF3D00;
+}
+.submissions-component-context-map-spacer {
+    padding: 20px;
+}
+.submission-context-map-listComponent {
+    width: 459px;
+    box-shadow: none;
+}
+.submission-context-map-mapComponent {
+    width: 975px;
+    height: 485px;
+    box-shadow: none;
+}
+.submission-context-mapComponent-map {
+    margin-top: -15px;
+    margin-left: -15px;
 }
 
 @media only screen and (max-width: 600px) {

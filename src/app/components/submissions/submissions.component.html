@@ -50,9 +50,19 @@
 </div>
 <br/>
 <div class="submissions-component-context">
-    <div *ngIf="loadMapComponent; else elseBlock">
+    <div *ngIf="true; else elseBlock">
         <mat-card class="submissions-component-context-map">
-            Content to render when condition is true.
+          <mat-card class="submission-context-map-listComponent">
+            <mat-card-content>Simple card</mat-card-content>
+          </mat-card>
+          <span class="submissions-component-context-map-spacer"> </span>
+          <mat-card class="submission-context-map-mapComponent">
+            <mat-card-content>
+              <iframe class="submission-context-mapComponent-map" width="970" height="470" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-77.05278396606445%2C38.885956222285216%2C-77.02518939971924%2C38.89696237545183
+              &amp;layer=mapnik&amp;marker=38.89145951204772%2C-77.03898668289185"></iframe>
+            </mat-card-content>
+          </mat-card>
         </mat-card>
     </div>
     <ng-template #elseBlock>

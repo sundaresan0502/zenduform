@@ -24,6 +24,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {NgSwitch} from '@angular/common';
+import { MatGridListModule } from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,8 @@ import {NgSwitch} from '@angular/common';
     MatTableModule,
     MatPaginatorModule,
     MatCheckboxModule,
-    NgSwitch
+    NgSwitch,
+    MatGridListModule
   ],
   exports: [
     MatIconModule
