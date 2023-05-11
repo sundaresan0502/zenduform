@@ -208,6 +208,157 @@
 }
 .submission-context-mapComponent-map {
     margin-top: -15px;
+    margin-left: -25px;
+    width:980px; 
+    height:470px;
+}
+.submission-context-map-listData {
+    box-sizing: border-box;
+    width: 459px;
+    height: 144px;
+    background: #FFFFFF;
+    border: 1px solid #B8B9BC;
+    border-radius: 4px;
+}
+.submission-map-list-header {
+    display: -webkit-inline-box;
+}
+.submission-context-map-listHeader,
+.mat-mdc-card-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #060C1B;
+}
+.submission-map-Unassigned-button {
+    margin-top: -5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 8px;
+    width: 117px;
+    height: 32px;
+    left: 16px;
+    top: 8px;
+    background: #ECECED;
+    border: 1px solid #B8B9BC;
+    border-radius: 4px;
+}
+.submission-map-lowrisk-button {
+    margin-top: -5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 8px;
+    width: 117px;
+    height: 32px;
+    left: 16px;
+    top: 8px;
+    background: #D7E5DA;
+    border: 1px solid #53D86A;
+    border-radius: 4px;
+}
+.submission-map-Uncomplete-button {
+    margin-top: -5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 8px;
+    width: 117px;
+    height: 32px;
+    left: 16px;
+    top: 8px;
+    background: rgba(255, 61, 0, 0.1);;
+    border: 1px solid #FF3D00;
+    border-radius: 4px;
+}
+.submission-map-list-context mat-list-item {
+    margin: 0px;
+    padding: 0px;
+    margin-top: -15px;
+}
+.map-list-from-text {
+    width: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #B8B9BC;
+}
+.map-list-from-subText {
+    margin-left: 10px;
+    width: 206px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #060C1B;
+}
+.map-list-to-text {
+    width: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #B8B9BC;
+}
+.map-list-to-subText {
+    margin-left: 10px;
+    width: 206px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #060C1B;
+}
+.map-list-dueDate-test {
+    width: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #B8B9BC;
+}
+.map-list-dueDate-subText {
+    margin-left: 10px;
+    width: 96px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FF3D00;
+}
+.submission-content-spacer-five {
+    padding: 5px;
+}
+.submission-content-map-listbox {
+    margin-top: -10px;
     margin-left: -15px;
 }
 
@@ -230,5 +381,11 @@
     }
     .submissions-content-export {
         margin-left: 40px;
+    }
+    .submissions-component-context-map {
+        display: block;
+    }
+    .submission-context-mapComponent-map {
+        width: 450px;
     }
 }

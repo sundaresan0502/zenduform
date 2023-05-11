@@ -10,9 +10,9 @@ import {MatTableDataSource} from '@angular/material/table';
 })
 export class SubmissionsComponent implements OnInit, AfterViewInit {
   loadMapComponent = false;
-  
   displayedColumns: string[] = ['Select', 'Task', 'Status', 'From', 'To', 'Customer_Address', 'Due_Date'];
-  dataSource = new MatTableDataSource<SubmissionDataModel>(ELEMENT_DATAs);
+  arrayofSubmissions: SubmissionDataModel[] = submissionData;
+  dataSource = new MatTableDataSource<SubmissionDataModel>(this.arrayofSubmissions);
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
@@ -27,6 +27,5 @@ export class SubmissionsComponent implements OnInit, AfterViewInit {
   } 
   
 }
-const ELEMENT_DATAs: SubmissionDataModel[] = submissionData
 
 

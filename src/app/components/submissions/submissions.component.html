@@ -53,12 +53,67 @@
     <div *ngIf="loadMapComponent; else elseBlock">
         <mat-card class="submissions-component-context-map">
           <mat-card class="submission-context-map-listComponent">
-            <mat-card-content>Simple card</mat-card-content>
+            <mat-card-content>
+                <div class="submission-content-map-listbox" *ngFor="let item of [0, 1, 2];">
+                  <mat-card class="submission-context-map-listData">
+                    <mat-card-header lass="submission-context-map-listHeader">
+                      <div class="submission-map-list-header">
+                        <p>{{arrayofSubmissions[item].Task}}</p>
+                        <span class="submission-content-spacer"></span>
+                        <span class="submission-content-spacer"></span>
+                        <span class="submission-content-spacer"></span>
+                        <span class="submission-content-spacer"></span>
+                        <div [ngSwitch]="arrayofSubmissions[item].Status">
+                          <div *ngSwitchCase="'Unassigned'">
+                            <div class="submission-map-Unassigned-button">
+                              <mat-icon class="submission-table-unassigned-circle-icon">fiber_manual_record</mat-icon>
+                              <p class="submission-table-unassigned-text">Unassigned</p>
+                            </div>
+                          </div>
+                          <div *ngSwitchCase="'Low Risk'">
+                            <div class="submission-map-lowrisk-button">
+                              <mat-icon class="submission-table-lowrisk-circle-icon">fiber_manual_record</mat-icon>
+                              <p class="submission-table-lowrisk-text">Low Risk</p>
+                            </div>
+                          </div>
+                          <div *ngSwitchCase="'Uncomplete'">
+                            <div class="submission-map-Uncomplete-button">
+                              <mat-icon class="submission-table-uncomplete-circle-icon">fiber_manual_record</mat-icon>
+                              <p class="submission-table-Uncomplete-text">Uncomplete</p>
+                            </div>
+                          </div>
+                          <div *ngSwitchDefault>Please enter valued status</div>
+                        </div>
+                      </div>
+                    </mat-card-header>
+                    <mat-card-content>
+                      <mat-list class="submission-map-list-context">
+                        <mat-list-item class="map-list-context-list">
+                          <p class="map-list-from-text">
+                            From: <mat-label class="map-list-from-subText">{{arrayofSubmissions[item].From}}</mat-label>
+                          </p>
+                        </mat-list-item>
+                        <mat-list-item class="map-list-context-list">
+                          <p class="map-list-to-text">
+                            To: <mat-label class="map-list-to-subText">{{arrayofSubmissions[item].To}}</mat-label>
+                          </p>
+                        </mat-list-item>
+                        <mat-list-item class="map-list-context-list">
+                          <p class="map-list-dueDate-test">
+                            Due Date: <mat-label class="map-list-dueDate-subText">{{arrayofSubmissions[item].Due_Date}}</mat-label>
+                          </p>
+                        </mat-list-item>
+                      </mat-list>
+                    </mat-card-content>
+                  </mat-card>
+                  <span class="submission-content-spacer-five"></span>
+                </div>
+            </mat-card-content>
           </mat-card>
           <span class="submissions-component-context-map-spacer"> </span>
           <mat-card class="submission-context-map-mapComponent">
             <mat-card-content>
-              <iframe class="submission-context-mapComponent-map" width="970" height="470" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+              <iframe class="submission-context-mapComponent-map"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
               src="https://www.openstreetmap.org/export/embed.html?bbox=-77.05278396606445%2C38.885956222285216%2C-77.02518939971924%2C38.89696237545183
               &amp;layer=mapnik&amp;marker=38.89145951204772%2C-77.03898668289185"></iframe>
             </mat-card-content>
