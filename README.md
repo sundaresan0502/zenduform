@@ -1,27 +1,45 @@
 # ZenduForm
+This is a demo ERP application, it's designed to solve a unique needs of our customer. this app is build using angular 16.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+## Features 📋
+⚡️ Desgined with Responsive\
+⚡️ Implemented component based render, which make the application lighting fast. [Instead of loading entire page for changes, we render particultar components]
+⚡️ Standalone application. [For backend, utilized internal json data to render]
+⚡️ Producation ready application
+⚡️ Easy to modify
 
-## Development server
+## Installation 📦
+- lntall npm (node server)
+- Use this command to install angular "npm install -g @angular/cli"
+- Use this command to install angular material "npm install @angular/material"
+- Use this command to install angular material icon "npm install @material-icons/angular"
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Sections 📚
+✔️ Src\ [Soruce contains all required soruce code]
+✔️ Model\ [Model contains all required interfaces]
+✔️ assets\ [assets contains all required date and other information like image, video]
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tools Used 🛠️
+* Angular\
+* Json\
+* Angular Icon\
+* Angular Material
 
-## Build
+## Step to Setup and Runn in your local 💡
+#### Step 1
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Option 1**
+    - 🍴 Fork this repo!
 
-## Running unit tests
+- **Option 2**
+    - 👯 Clone this repo to your local machine.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+#### Step 2
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Build your code** 🔨🔨🔨 using this command "ng build"
 
-## Further help
+#### Step 3
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- 
