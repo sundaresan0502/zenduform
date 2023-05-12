@@ -13,7 +13,15 @@ export class SubmissionsComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['Select', 'Task', 'Status', 'From', 'To', 'Customer_Address', 'Due_Date'];
   arrayofSubmissions: SubmissionDataModel[] = submissionData;
   dataSource = new MatTableDataSource<SubmissionDataModel>(this.arrayofSubmissions);
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  _paginator: MatPaginator;
+
+@ViewChild(MatPaginator,  {static: false}) set matPaginator(paginator: MatPaginator) {
+   this._paginator = paginator;
+
+   if (this.dataSource) {
+       this.dataSource.paginator = paginator;
+   }
+}@ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
@@ -27,5 +35,6 @@ export class SubmissionsComponent implements OnInit, AfterViewInit {
   } 
   
 }
+
 
 

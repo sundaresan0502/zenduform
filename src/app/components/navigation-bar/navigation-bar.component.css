@@ -35,7 +35,7 @@
 }
 .navbar-submenu-context {
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     font-style: normal;
     line-height: 14px;
@@ -75,6 +75,9 @@
 }
 .navbar-smallscreen-submenu {
     display: none;
+}
+.navbar-submenu-spacer-five{
+    padding: 15px;
 }
 
 @media only screen and (max-width: 600px) {
