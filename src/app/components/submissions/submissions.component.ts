@@ -15,13 +15,14 @@ export class SubmissionsComponent implements OnInit, AfterViewInit {
   dataSource = new MatTableDataSource<SubmissionDataModel>(this.arrayofSubmissions);
   _paginator: MatPaginator;
 
-@ViewChild(MatPaginator,  {static: false}) set matPaginator(paginator: MatPaginator) {
-   this._paginator = paginator;
+  @ViewChild(MatPaginator,  {static: false}) set matPaginator(paginator: MatPaginator) {
+    this._paginator = paginator;
 
-   if (this.dataSource) {
-       this.dataSource.paginator = paginator;
-   }
-}@ViewChild(MatPaginator) paginator: MatPaginator;
+    if (this.dataSource) {
+        this.dataSource.paginator = paginator;
+    }
+  }
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;

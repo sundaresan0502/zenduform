@@ -1,8 +1,8 @@
 export interface SubmissionDataModel {
-  Task: String;  
-  Status: String;  
-  From: String;  
-  To: String;
-  Customer_Address: String;
-  Due_Date: String;
+  Task: string;  
+  Status: string;  
+  From: string;  
+  To: string;
+  Customer_Address: string;
+  Due_Date: string;
   }
