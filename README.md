@@ -51,17 +51,11 @@ This is a demo ERP application that's designed to solve the unique needs of our 
 
 ## Accepting criteria ScreenShot:
 
-command **ng build confidence production**:\
-![Prod Build Command](https://github.com/sundaresan0502/zenduform/tree/main/src/assets/images/app-screenshots/07_zenduForm_buildProd_Success.png)
+command **ng build confidence production**: success\
+For reference, please have look into this image : **src/assets/images/app-screenshots/07_zenduForm_buildProd_Success.png**
 
-command **ng lint** :\
-![ng lint Command](https://github.com/sundaresan0502/zenduform/tree/main/src/assets/images/app-screenshots/08_zenduForm_nglint_Success.png)
+command **ng lint** : success\
+For reference, please have look into this image : **src/assets/images/app-screenshots/08_zenduForm_nglint_Success.png**
 
 ## Application ScreenShots:
-DeskTop View:\
-![App Desktop View](https://github.com/sundaresan0502/zenduform/tree/main/src/assets/images/app-screenshots/01_zenduForm-ListPage.png)
-
-Mobile View:\
-![App Mobile View](https://github.com/sundaresan0502/zenduform/tree/main/src/assets/images/app-screenshots/05_zenduForm-menu-mobileView.png)
-
-For other images, videos, and gifs of this application, please look in this section: **src/assets/images/app-screenshots/**
+For images, videos, and gifs of this application, please look in this section: **src/assets/images/app-screenshots/**
