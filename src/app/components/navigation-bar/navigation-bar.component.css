@@ -11,7 +11,7 @@
     top: 0%;
     bottom: 91.67%;
     background: #2188D9;
-    width: 100%;
+    width: fit-content;
 }
 .header-text {
     width: 198px;
@@ -81,6 +81,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .navbar-container {
+        width: 100%;
+    }
     .navbar-submenu {
         display: none;
     }
